@@ -58,11 +58,11 @@
     "xibao-gen": {
       "flake": false,
       "locked": {
-        "lastModified": 1760557429,
-        "narHash": "sha256-IrjfI3+jemo2O7U/dK7+YwtlSC1owkfWPisqoQwoV1g=",
+        "lastModified": 1777373404,
+        "narHash": "sha256-MjRbtgT72t2lq6ZvAQ0ClTRorQ7nWgZrQZqLbV18exs=",
         "owner": "onion108",
         "repo": "xibao-gen",
-        "rev": "3fe9c1027d48dccb6049fdb5e3a50889a32698dc",
+        "rev": "83c518ae6ac53abf257d252beaa1ec85da983bf7",
         "type": "github"
       },
       "original": {

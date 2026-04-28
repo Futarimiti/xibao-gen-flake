@@ -66,13 +66,6 @@ rustPlatform.buildRustPackage.override { stdenv = clangStdenv; } (finalAttrs: {
   ]
   ++ lib.optional stdenv.hostPlatform.isDarwin cctools.libtool;
 
-  # XXX remove when fixed on upstream
-  postPatch = ''
-    substituteInPlace src/resource.rs \
-      --replace-fail 'if let Ok(mut path_buf) = current_exe()' \
-                     'if let Ok(mut path_buf) = current_exe().and_then(|p| p.canonicalize())'
-  '';
-
   postFixup = ''
     remove-references-to -t "$SKIA_SOURCE_DIR" $out/bin/xibao-gen
   '';
