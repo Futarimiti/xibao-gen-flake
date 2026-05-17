@@ -17,7 +17,7 @@
         { pkgs, ... }:
         {
           packages.default = pkgs.callPackage ./xibao-gen.nix {
-            version = "0.2.0";
+            version = "0.3.0";
             src = xibao-gen;
           };
         };

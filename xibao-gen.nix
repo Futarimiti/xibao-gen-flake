@@ -25,7 +25,7 @@
 rustPlatform.buildRustPackage.override { stdenv = clangStdenv; } (finalAttrs: {
   inherit pname version src;
 
-  cargoHash = "sha256-yzCTVfu1tyBOTRN1XYqVFyfxnoGwa2/D3c73ib/jrkI=";
+  cargoHash = "sha256-0IgIXnJucNiYSrSdzVK4Fb0Bk+Fb+CsWEjs3VBBbtkU=";
 
   env = {
     SKIA_SOURCE_DIR =
