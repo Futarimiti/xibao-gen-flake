@@ -1,7 +1,8 @@
-name: "Cache"
+name: 'build & cache'
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 jobs:
   cache-build:
     strategy:
@@ -15,4 +16,4 @@ jobs:
         with:
           name: futarimiti
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-      - run: 'nix build .#'
+      - run: 'nix build -L --accept-flake-config .#'
